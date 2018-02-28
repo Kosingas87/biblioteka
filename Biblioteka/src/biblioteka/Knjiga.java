@@ -4,7 +4,13 @@ public class Knjiga {
 	
 	private String naslov;
 	private String isbn;
-	private String autor;
+	private Autor[] autori;
+	public Autor[] getAutori() {
+		return autori;
+	}
+	public void setAutori(Autor[] autori) {
+		this.autori = autori;
+	}
 	private String izdavac;
 	private int izdanje;
 	public String getNaslov() {
@@ -19,12 +25,7 @@ public class Knjiga {
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
-	public String getAutor() {
-		return autor;
-	}
-	public void setAutor(String autor) {
-		this.autor = autor;
-	}
+
 	public String getIzdavac() {
 		return izdavac;
 	}
