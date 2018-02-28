@@ -16,6 +16,8 @@ public class Biblioteka implements BibliotekaInterface {
 		else
 			
 		// TODO Auto-generated method stub
+		if(knjiga==null)
+			throw new RuntimeException();
 		knjige.add(knjiga);
 	}
 
