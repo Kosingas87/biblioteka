@@ -18,9 +18,11 @@ public class Biblioteka implements BibliotekaInterface {
 		// TODO Auto-generated method stub
 		if(knjiga==null)
 			throw new RuntimeException();
+		System.out.println("aham");
 		knjige.add(knjiga);
 	}
 
+	
 	@Override
 	public void obrisiKnjigu(Knjiga knjiga) {
 		// TODO Auto-generated method stub
@@ -28,6 +30,7 @@ public class Biblioteka implements BibliotekaInterface {
 			throw new RuntimeException();
 		knjige.remove(knjiga);
 	}
+	
 
 	@Override
 	public LinkedList<Knjiga> vratoSveKnjige() {
