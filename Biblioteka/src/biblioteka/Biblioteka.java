@@ -12,12 +12,16 @@ public class Biblioteka implements BibliotekaInterface {
 	@Override
 	public void dodajKnjigu(Knjiga knjiga) {
 		// TODO Auto-generated method stub
+		if(knjiga==null)
+			throw new RuntimeException();
 		knjige.add(knjiga);
 	}
 
 	@Override
 	public void obrisiKnjigu(Knjiga knjiga) {
 		// TODO Auto-generated method stub
+		if(knjiga==null)
+			throw new RuntimeException();
 		knjige.remove(knjiga);
 	}
 
